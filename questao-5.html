@@ -13,10 +13,10 @@
     <script>
         let nome, altura, peso, imc
         nome = prompt("digite seu nome: " )
-        altura =  parseFloat(prompt("digite sua altura em cm: "))
+        altura = parseInt(prompt("digite sua altura em cm: "))
         peso = parseFloat(prompt('digite seu peso: '))
 
-            imc = peso / (altura* altura)
+            imc = (peso / (altura* altura)) *10000
             console.log(imc)
 
 
@@ -48,7 +48,6 @@
             else if ( imc >= 40  ){
                 console.log('obesidade grau 3' )
             }
-
 
     </script>
 

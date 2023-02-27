@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTÃO 03</title>
+</head>
+<body>
+    <!-- 03) Uma empresa decide dar um aumento de 30% aos funcionários com salários
+     inferiores a R$ 500,00. Faça um programa que receba o salário do funcionário
+      e mostre o valor do salário reajustado ou uma mensagem, caso não ele não tenha 
+      direito ao aumento. -->
+
+      <script>
+        let salarioAtual = parseInt(prompt("digite o salario atual "))
+
+        let valorAtualizado = (salarioAtual * 0.3) + salarioAtual
+
+
+
+        if( salarioAtual > 500){
+            console.log("seu salário nao teve reajuste!")
+
+        }
+        else if (salarioAtual <= 500){
+            console.log("salário atualizado:", valorAtualizado )
+        }
+
+      </script>
+
+</body>
+</html>

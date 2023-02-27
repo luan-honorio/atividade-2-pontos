@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTAO 05</title>
+</head>
+<body>
+    <!-- 05) Crie uma aplicação para efetuar o cálculo do índice de massa corporal. -->
+
+
+    <script>
+        let nome, altura, peso, imc
+        nome = prompt("digite seu nome: " )
+        altura =  parseFloat(prompt("digite sua altura em cm: "))
+        peso = parseFloat(prompt('digite seu peso: '))
+
+            imc = peso / (altura* altura)
+            console.log(imc)
+
+
+            if( imc < 16   ){
+                console.log("baixo do peso muito grave ")
+            }
+            else if ( imc >= 16 && imc <16.99  ){
+                console.log('baixo peso grave' )
+            }
+            
+            else if ( imc >= 17 && imc <18.49  ){
+                console.log('baixo peso' )
+            }
+            
+            else if ( imc >= 18.50 && imc <24.99  ){
+                console.log('peso normal' )
+            }
+            
+            else if ( imc >= 25 && imc <29.99  ){
+                console.log('sobrepeso' )
+            }
+            
+            else if ( imc >= 30 && imc <34.99  ){
+                console.log('obesidade grau 1' )
+            }
+            else if ( imc >= 35 && imc <39.99  ){
+                console.log('obesidade grau 2' )
+            }
+            else if ( imc >= 40  ){
+                console.log('obesidade grau 3' )
+            }
+
+
+    </script>
+
+
+
+</body>
+</html>
